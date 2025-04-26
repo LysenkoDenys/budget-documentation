@@ -27,13 +27,15 @@ body {
   left: 0;
   padding: 20px;
   overflow-y: auto;
+  box-shadow: 2px 0px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
 }
 
 h1 {
   text-align: center;
   font-size: 3rem;
   color: #1f2937;
-  /* margin-bottom: 20px; */
+  font-family: 'Playfair Display', serif;
 }
 
 h2 {
@@ -41,6 +43,7 @@ h2 {
   font-size: 2rem;
   color: #1f2937;
   margin-bottom: 20px;
+  font-family: 'Playfair Display', serif;
 }
 
 .nav-link {
@@ -50,12 +53,19 @@ h2 {
   border-radius: 8px;
   text-decoration: none;
   color: #333;
-  transition: background 0.3s;
+  transition: background 0.3s, transform 0.3s;
 }
 
 .nav-link:hover {
   background: #c2c3c6;
   color: #e8eaed;
+  transform: translateX(5px);
+}
+
+.nav-link.active {
+  background-color: #4b6cb7;
+  color: white;
+  font-weight: bold;
 }
 
 @media (max-width: 768px) {
@@ -86,6 +96,10 @@ li {
   list-style: none;
 }
 
+ul {
+  padding: 0;
+}
+
 .screenshots {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -111,11 +125,24 @@ li {
 
 code,
 pre {
-  background: #a3a8b2;
-  color: #e2e8f0;
+  background: #1e293b;
+  color: #f8fafc;
   padding: 15px;
   border-radius: 5px;
   font-family: 'Fira Code', monospace;
   overflow-x: auto;
   display: block;
+  line-height: 1.5;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  font-size: 0.9rem;
 }
