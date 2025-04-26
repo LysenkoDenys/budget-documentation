@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang='en'>
+<head>
+  <link rel='stylesheet' href='styles.css' type="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<title>budget-documentation</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="documentation to budget application">
+  <meta name="author" content="Lysenko Denys">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <div class='container'>
+  <nav id="navbar">
+              <header>
+      <h2>Menu</h2>
+                </header>
+      <ul>
+        <li><a class='nav-link' href='#general_purpose'>General purpose</a></li>
+        <li><a class='nav-link' href='#features'>Features</a></li>
+        <li><a class='nav-link' href='#screen_shots'>Screen shots</a></li>
+        <li><a class='nav-link' href='#technologies'>Technologies</a></li>
+        <li><a class='nav-link' href='#project_structure'>Project Structure</a></li>
+        <li><a class='nav-link' href='#getting_started'>Getting started</a></li>
+      </ul>
+
+  </nav>
+  <main id="main-doc">
+    <section class='main-section' id='general_purpose'>
+      <h1>Budget.app</h1>
+    <header>
+      <h2>General purpose</h2>
+    </header>
+   <p><strong>Budget</strong> is a modern, lightweight Progressive Web App (PWA) designed to help individuals track, manage, and analyze their financial activities with ease. 
+It provides a clean, intuitive interface for recording transactions, categorizing expenses, setting up future financial goals, and visualizing spending patterns over time.</p>
+
+<p>The application emphasizes speed, accessibility, and offline availability thanks to its PWA capabilities. Built with Next.js and React.js, it delivers a smooth user experience while ensuring scalability for future enhancements.</p>
+
+<p>Whether you want to control daily expenses, prepare for a major purchase, or simply understand where your money goes — Budget gives you the tools you need.</p>
+
+<p>🔗 <a href="https://budget4u.vercel.app" target="_blank">Try it</a></p>
+    </section>
+    <section class='main-section' id='features'>
+          <header>
+      <h2>Features</h2>
+          </header>
+              <p></p>
+              <ul>
+                <li>🧾 Add, edit, and delete transactions</li>
+                <li>📊 Categorize income and expenses</li>
+                <li>📈 Visual charts and statistics for insights</li>
+                <li>🔮 Budget forecasting and planning</li>
+                <li>🌍 Internationalization with `react-intl`</li>
+                <li>⚡ Optimized list rendering with `react-window` & `react-virtualized`</li>
+                <li> 📉Do not need internet connection after installing</li>
+
+              </ul>
+    </section>
+    <section class='main-section' id='screen_shots'>
+          <header>
+      <h2>Screen shots</h2>
+          </header>
+              <p></p>
+  <div class="screenshots">
+    <img src='https://i.postimg.cc/KjttKC8b/1.png' alt='main'>
+    <img src='https://i.postimg.cc/g2z3JSF9/2.png' alt='statistics'>
+    <img src='https://i.postimg.cc/zGxKRC8y/4.png' alt='filters'>
+    <img src='https://i.postimg.cc/RVQcvrYQ/3.png' alt='settings'>
+    <img src='https://i.postimg.cc/wB3J51j0/5.png' alt='add-a-transaction'>
+  </div>
+    </section>
+    <section class='main-section' id='technologies'>
+          <header>
+      <h2>Technologies</h2>
+          </header>
+              <p></p>
+              <ul>
+              <li>Framework: [Next.js] (https://nextjs.org/)</li>
+              <li>Language: JavaScript</li>
+              <li>Styling: Tailwind CSS</li>
+              <li>Key Libraries:</li>
+              <ul>
+                              <li>react-intl – Internationalization</li>
+                              <li>react-window, react-virtualized</li>
+                              <li>Virtualized list rendering</li>
+                              <li> Recharts: (https://recharts.org/)</li>
+              </ul>
+              </ul>
+
+    </section>
+    <section class='main-section' id='project_structure'>
+          <header>
+      <h2>Project Structure</h2>
+          </header>
+              <p></p>
+              <code>
+                <pre>
+
+├── next.config.mjs  
+├── package-lock.json   /
+│   ├── src/
+│   ├── __tests__/  
+│   ├── babel.config.js  
+│   ├── constants/  
+│   ├── hooks.js    
+│   ├── scripts/
+│   ├── app/   
+│   │   ├── about/            
+│   │   ├── globals.css    
+│   │   ├── layout.js  
+│   │   ├── settings/
+│   │   ├── client-layout.js  
+│   │   ├── Home.test.tsx  
+│   │   ├── page.js    
+│   │   └── statistics/     
+│   ├── components/ 
+│   │   ├── Balance/        
+│   │   ├── Counter/          
+│   │   ├── Form/     
+│   │   ├── Modal/   
+│   │   ├── ThemeSwitch/
+│   │   ├── BalanceData/    
+│   │   ├── ErrorBoundary/    
+│   │   ├── Heading/  
+│   │   ├── NavBar/  
+│   │   ├── Transaction/
+│   │   ├── ChangeBalance/  
+│   │   ├── ErrorSimulation/  
+│   │   ├── Logo/     
+│   │   ├── Portal/  
+│   │   └── Transactions/     
+│   ├── HOCs/       
+│   ├── providers/  
+│   └── utils/
+├── eslint.config.mjs  
+├── next-env.d.ts    
+├── postcss.config.mjs  
+├── tailwind.config.mjs
+├── jest.config.js     
+├── node_modules/    
+├── public/             
+├── tsconfig.json
+├── jsconfig.json      
+├── package.json     
+└── README.md
+                </pre>
+              </code>
+              <p></p>
+    </section>
+    <section class='main-section' id='getting_started'>
+          <header>
+      <h2>Getting started</h2>
+          </header>
+                        <p>Make sure you have the following installed before proceeding:</p>
+                        <ul>
+  <li><strong><a href="https://nodejs.org/">Node.js</a></strong> (v18 or later recommended)</li>
+  <li><strong><a href="https://www.npmjs.com/">npm</a></strong> (comes bundled with Node.js)</li>
+  <li><strong><a href="https://yarnpkg.com/">Yarn</a></strong> (Optional) if you prefer it over npm</li>
+</ul>
+
+<p>You can check if Node.js and npm are installed by running:</p>
+
+<pre><code>node -v
+npm -v
+</code></pre>
+
+<p>If not installed, you can download and install Node.js from 
+<a href="https://nodejs.org/">nodejs.org</a>.</p>
+              <p>To run the project on your PC you must have installed Node.js also you should write in the VSC terminal following:
+</p>
+<p>Install dependencies:</p>
+              <code>npm install</code>
+              <p>Run the app in development mode</p>
+              <code>npm run dev</code>
+          <p>Build for production:</p>
+               <code>npm run build
+</code> <br/>
+               <code>
+npm start</code>
+              <p>Testing</p>
+              <code>npm test</code>
+    </section>
+  </main>
+  </body>
+</body>
+<html>
